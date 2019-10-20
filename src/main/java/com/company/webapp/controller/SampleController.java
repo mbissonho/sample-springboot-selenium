@@ -11,7 +11,7 @@ public class SampleController {
 
 	@GetMapping("/")
 	public ModelAndView home() {
-		ModelAndView mv = new ModelAndView("index.html");
+		ModelAndView mv = new ModelAndView("index");
 		return mv;
 	}
 	
