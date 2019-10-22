@@ -1,9 +1,9 @@
 language: java
 jdk:
-  - oraclejdk8
+	- oraclejdk8
 
 addons:
-  firefox: "69.0.2"
+  firefox: "latest"
  
 before_script:
   - "export DISPLAY=:99.0"
