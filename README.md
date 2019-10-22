@@ -1,5 +1,5 @@
 # sample-springboot-selenium
 
-[![Build Status](https://travis-ci.com/PedroBissonho/reactive-widgets.svg?branch=master)](https://travis-ci.com/PedroBissonho/reactive-widgets)
+[![CircleCI](https://circleci.com/gh/mbissonho/sample-springboot-selenium.svg?style=svg)](https://circleci.com/gh/mbissonho/sample-springboot-selenium)
 
 Demo project to work with Selenium and Springboot
