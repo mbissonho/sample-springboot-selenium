@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sample Springboot Selenium</title>
+    <title>Sample Springboot Selenium | Login</title>
 	<link rel="stylesheet" type="text/css" th:href="@{/css/vendor/bootstrap.min.css}" />
 </head>
 
@@ -13,15 +13,15 @@
 		<div class="row">
 		 <div class="offset-3 col-md-6 py-5">
                  <h1>Login Form</h1>
-                 <form class="py-5">
+                 <form class="py-5" th:action="@{/webapp}" th:object="${logindto}" method="POST">
                      <div class="form-group">
-                         <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                         <input id="login" type="email" class="form-control" th:field="*{login}" placeholder="Your Email *" value="" />
                      </div>
                      <div class="form-group">
-                         <input type="password" class="form-control" placeholder="Your Password *" value="" />
+                         <input id="pass" type="password" class="form-control" th:field="*{pass}" placeholder="Your Password *" value="" />
                      </div>
                      <div class="form-group">
-                         <input type="submit" class="btnSubmit" value="Login" />
+                         <input type="submit" class="btnSubmit" value="Login" id="btnLogin" />
                      </div>
                      <div class="form-group">
                          <a href="#" class="ForgetPwd">Forget Password?</a>
@@ -31,6 +31,7 @@
 		</div>
     </div>
 
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 	<script th:src="@{/js/vendor/bootstrap.min.js}" ></script>
 </body>
 
